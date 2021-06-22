@@ -1,105 +1,108 @@
 'use strict';
 let userName = prompt('what is your name ?');
 
-alert('welcome to my website' + userName);
+alert('welcome to my websit ' + userName);
 
 alert('you can see about owner article read it then answer to questions');
 
 alert('Hello, My name is ahmad, I am 24 years old,I am jordinian and I live in Irbid city I graduated from Yarmouk University with major in Electronics Engineering and now I try to be a web developerand you can see from this site Which game I like');
+let score = 0;
 //age
-let age = prompt('am i 24 years old? ');
+let myAge = [22, 23, 24, 25];
+let age = parseInt(prompt('how older is ahmad ? ', '[22, 23, 24, 25]'));
 console.log(age);
-switch (age.toLowerCase()) {
-    case 'yes':
-    case 'y':
-
-        alert('good answer')
-        console.log('yes');
+for (let i = 0; i <= 6; i++) {
+    if (age === myAge[2]) {
+        console.log(i)
+        alert('Correct answer');
+        score++;
         break;
 
-    case 'no':
-    case 'n':
-
-        alert(`incorrect answer ${userName}`)
-        console.log('no');
-        break;
-    default:
-        alert('yes or no answer');
-        break;
+    }
+    age = parseInt(prompt('how older is ahmad ? '));
 }
+
 //uni
-let uni = prompt('is my university JUST ?');
+let myUni = ['yarmouk', 'JUST', 'JU'];
+let uni = prompt('whit is ahmad university ? ', '[yarmouk, JUST, JU]');
 console.log(uni);
-switch (uni.toLowerCase()) {
-    case 'no':
-    case 'n':
-        alert('good answer')
-        console.log('no');
+for (let i = 0; i <= 6; i++) {
+    if (uni === myUni[0]) {
+        console.log(i)
+        alert('Correct answer');
+        score++;
         break;
-    case 'yes':
-    case 'y':
-        alert(`incorrect answer ${userName}`)
-        console.log('yes');
-        break;
-    default:
-        alert('yes or no answer');
-        break;
+    }
+    uni = prompt('whit is ahmad university ? ');
 }
-
 //liv
-
-let liv = prompt('Am I amrican ?');
-console.log(liv);
-switch (liv.toLowerCase()) {
-    case 'no':
-    case 'n':
-        alert('good answer')
-        console.log('no');
+let myCon = ['jordan', 'italy', 'cnada'];
+let con = prompt('whit is ahmad country ? ', '[jordan, italy, cnada]');
+console.log(con);
+for (let i = 0; i <= 6; i++) {
+    if (con === myCon[0]) {
+        console.log(i)
+        alert('Correct answer');
+        score++;
         break;
-    case 'yes':
-    case 'y':
-        alert(`incorrect answer ${userName}`)
-        console.log('yes');
-        break;
-    default:
-        alert('yes or no answer');
-        break;
+    }
+    con = prompt('whit is ahmad country ? ', '[jordan, italy, cnada]');
 }
-//major
 
-let maj = prompt('am i electronics engineering ?');
+//major
+let myMaj = ['electronics', 'civil', 'industrial'];
+let maj = prompt('whit is ahmad major ? ', '[ndustrial, civil, electronics]');
 console.log(maj);
-switch (maj.toLowerCase()) {
-    case 'yes':
-    case 'y':
-        alert('good answer')
-        console.log('yes');
+for (let i = 0; i <= 6; i++) {
+    if (maj === myMaj[0]) {
+        console.log(i)
+        alert('Correct answer');
+        score++;
         break;
-    case 'no':
-    case 'n':
-        alert(`incorrect answer ${userName}`)
-        console.log('no');
+    }
+    maj = prompt('whit is ahmad major ? ', '[ndustrial, civil, electronics]');
+}
+
+//city
+let myCity = ['amman', 'irbid', 'aqaba'];
+let city = prompt('whit is ahmad city ? ', '[amman, irbid, aqaba]');
+console.log(city);
+for (let i = 0; i <= 6; i++) {
+    if (city === myCity[1]) {
+        console.log(i)
+        alert('Correct answer');
+        score++;
         break;
-    default:
-        alert('yes or no answer');
-        break;
+    }
+    city = prompt('whit is ahmad city ? ', '[amman, irbid, aqaba]');
 }
 
 //game
-let game = prompt('love fifa ?');
-console.log(uni);
-switch (game.toLowerCase()) {
-    case 'yes':
-    case 'y':
-        alert('good answer')
-        console.log('yes');
+let myGame = ['FIFA', 'PUPG', 'PES'];
+let game = prompt('whit is ahmad play in his free time ? ', '[FIFA, PUPG, PES]');
+console.log(game);
+for (let i = 0; i <= 6; i++) {
+    if (game === myGame[0]) {
+        console.log(i)
+        alert('Correct answer');
+        score++;
         break;
-    case 'no':
-    case 'n':
-        alert(`incorrect answer ${userName}`)
-        console.log('no');
-        break;
-    default:
-        alert('yes or no answer');
-        break;
+    }
+    game = prompt('whit is ahmad play in his free time ? ', '[FIFA, PUPG, PES]');
 }
+
+//passion
+let myPass = ['developer', 'plyar', 'singer'];
+let pass = prompt('whit is ahmad passion ? ', '[developer, plyar, singer]');
+console.log(pass);
+for (let i = 0; i <= 6; i++) {
+    if (pass === myPass[0]) {
+        console.log(i)
+        alert('Correct answer');
+        score++;
+        break;
+    }
+    pass = prompt('whit is ahmad passion ? ', '[developer, plyar, singer]');
+}
+
+alert(`youhave ${score} point`)

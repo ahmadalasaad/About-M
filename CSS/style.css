@@ -1,14 +1,27 @@
 header{
-
+    
     background-color: darkgray;
+    height:100px ;
+}
+nav{
+
+    float: right;
+    padding-top:  25px;
+}
+h1{
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 25px; ;
+
 }
 h1,
 h3 {
-    text-align: center;
+    text-align: left;
     font-weight: bolder;
     margin: 15px;
     font-size: 40px;
 }
+
 nav ul li {
     display: inline-block;
     margin: 20px;
@@ -20,10 +33,11 @@ nav ul li a {
 }
 
 article img {
-    width: 90%;
-    margin-left: 5%;
+    width: 25%;
+    float:right;
+    
 }
-#T{
+section p{
     font-weight: bolder;
     margin: 15px;
     font-size: 40px;
@@ -34,22 +48,18 @@ article img {
     font-size: 20px;
     color: darkslateblue;
     margin: 5px;
-
+    
  }
- footer{
+ section ul li{
 
+    font-size: 20px;
+    color: darkslateblue;
+    margin: 5px;
+    
+ }
+
+ footer{
     text-align: center;
     background-color: rgb(2, 2, 2);
     color: floralwhite;
  }
-#A{
-    margin: 10px;
-}
-h2{
-    font-size: 40px;
-    color: blue;
-}
-#m {
-color: black;
-font-size: 20px;
-}
