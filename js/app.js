@@ -1,4 +1,7 @@
 'use strict';
+
+
+function welecom (){
 let userName = prompt('what is your name ?');
 
 alert('welcome to my websit ' + userName);
@@ -6,7 +9,13 @@ alert('welcome to my websit ' + userName);
 alert('you can see about owner article read it then answer to questions');
 
 alert('Hello, My name is ahmad, I am 24 years old,I am jordinian and I live in Irbid city I graduated from Yarmouk University with major in Electronics Engineering and now I try to be a web developerand you can see from this site Which game I like');
+
+}
+
+
 let score = 0;
+function Age(){
+
 //age
 let myAge = [22, 23, 24, 25];
 let age = parseInt(prompt('how older is ahmad ? ', '[22, 23, 24, 25]'));
@@ -21,7 +30,11 @@ for (let i = 0; i <= 6; i++) {
     }
     age = parseInt(prompt('how older is ahmad ? '));
 }
+}
 
+
+
+function uni1(){
 //uni
 let myUni = ['yarmouk', 'JUST', 'JU'];
 let uni = prompt('whit is ahmad university ? ', '[yarmouk, JUST, JU]');
@@ -35,7 +48,10 @@ for (let i = 0; i <= 6; i++) {
     }
     uni = prompt('whit is ahmad university ? ');
 }
+}
 //liv
+
+function liv1(){
 let myCon = ['jordan', 'italy', 'cnada'];
 let con = prompt('whit is ahmad country ? ', '[jordan, italy, cnada]');
 console.log(con);
@@ -48,7 +64,10 @@ for (let i = 0; i <= 6; i++) {
     }
     con = prompt('whit is ahmad country ? ', '[jordan, italy, cnada]');
 }
+}
 
+
+function major1(){
 //major
 let myMaj = ['electronics', 'civil', 'industrial'];
 let maj = prompt('whit is ahmad major ? ', '[ndustrial, civil, electronics]');
@@ -62,8 +81,10 @@ for (let i = 0; i <= 6; i++) {
     }
     maj = prompt('whit is ahmad major ? ', '[ndustrial, civil, electronics]');
 }
-
+}
 //city
+
+function city1(){
 let myCity = ['amman', 'irbid', 'aqaba'];
 let city = prompt('whit is ahmad city ? ', '[amman, irbid, aqaba]');
 console.log(city);
@@ -76,8 +97,10 @@ for (let i = 0; i <= 6; i++) {
     }
     city = prompt('whit is ahmad city ? ', '[amman, irbid, aqaba]');
 }
+}
 
 //game
+function agme1(){
 let myGame = ['FIFA', 'PUPG', 'PES'];
 let game = prompt('whit is ahmad play in his free time ? ', '[FIFA, PUPG, PES]');
 console.log(game);
@@ -90,7 +113,9 @@ for (let i = 0; i <= 6; i++) {
     }
     game = prompt('whit is ahmad play in his free time ? ', '[FIFA, PUPG, PES]');
 }
+}
 
+function  passion1(){
 //passion
 let myPass = ['developer', 'plyar', 'singer'];
 let pass = prompt('whit is ahmad passion ? ', '[developer, plyar, singer]');
@@ -106,3 +131,14 @@ for (let i = 0; i <= 6; i++) {
 }
 
 alert(`youhave ${score} point`)
+}
+
+
+welecom();
+Age();
+uni1();
+liv1();
+major1();
+city1();
+agme1();
+passion1();
